@@ -1,4 +1,10 @@
-flask==1.1.2
+flask==2.2.2
 flask_restful==0.3.9
 werkzeug==2.0.3
 marshmallow==3.19.0
+json==2.0.9
+re==2.2.1
+numpy==1.24.2
+ultralytics==8.0.52
+cv2==4.7.0
+pytesseract==0.3.9
