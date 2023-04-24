@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
 
-URL1 = "http://127.0.0.1:5000/load"
-URL2 = "http://127.0.0.1:5000/getjson"
+URL1 = "https://hopethisworks.onrender.com/load"
+URL2 = "https://hopethisworks.onrender.com/getjson"
 
 st.write("running")
 uploaded_file = None
