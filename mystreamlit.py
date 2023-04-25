@@ -10,12 +10,12 @@ uploaded_file = None
 uploaded_file = st.file_uploader("Choose a image file", type=["png", "jpg", "jpeg", "gif"])
 if uploaded_file is not None:
     r = {}
-    with st.spinner('your file is processing...'):
-        file = uploaded_file.read()
-        files = {'file': file}
-        r1 = requests.post(url=URL1, files=files)
+    # with st.spinner('your file is processing...'):
+    file = uploaded_file.read()
+    files = {'file': file}
+    r1 = requests.post(url=URL1, files=files)
         # st.write(r1.json())
-        r = requests.get(url=URL2).json()
+    r = requests.get(url=URL2).json()
 
     st.write("NAME :",r['name'])
     st.write("AADHAAR NUMBER :",r['aadhaar_no'])
